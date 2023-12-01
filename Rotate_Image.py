@@ -8,3 +8,6 @@ class Solution:
         for i in range(len(matrix)):
             matrix[i]=matrix[i][::-1]
         return(matrix)
+
+Time complexity: O(n*n)
+Space complexity: O(1)
