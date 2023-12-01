@@ -18,5 +18,5 @@ for i in range(len(lst1)):
 for row in a:
     print(row)
 
-# Time Complexity: O(n * n)
-# Space Complexity: O(n + n)
+# Time Complexity: O(n * m)
+# Space Complexity: O(n + m)
