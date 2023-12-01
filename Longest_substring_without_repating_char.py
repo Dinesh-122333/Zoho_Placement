@@ -23,8 +23,10 @@ class Solution:
             return result  
         else:
             return 0   
+            
         Time Complexity: O(n^2)
         Space Complexity: O(n)
+        
         #optimal solution
         if len(s)>0 :
             char_index_map = {}
