@@ -1,5 +1,6 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
+        #optimal solution
         if len(s)>0 :
             char_index_map = {}
             start = 0
@@ -15,3 +16,6 @@ class Solution:
             return max_length
         else:
             return 0   
+
+        Time complexity: O(n)
+        Space complexity: O(1)
