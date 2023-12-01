@@ -26,3 +26,6 @@ class Solution:
                     arr[m][left]=ele
                 left += 1
         return arr
+
+        # Time Complexity: O(n^2)
+        # Space Complexity: O(n^2)
