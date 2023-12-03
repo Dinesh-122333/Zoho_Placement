@@ -1,6 +1,7 @@
 class Solution:
     def palindromePairs(self, words: List[str]) -> List[List[int]]:
-            lst = []
+        #Brute Force(Time Limit Exceeded)    
+        lst = []
             
             for i in range(len(words)):
                 for j in range(len(words)):
@@ -10,3 +11,5 @@ class Solution:
                             lst.append([i, j])
 
             return (lst)
+        #Time Complexity:O(n^2*m)
+        #Space Complexity:O(n^2)
