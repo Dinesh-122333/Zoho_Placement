@@ -17,3 +17,6 @@ for i in range(len(lst1)):
         a[j][lst2[i]] = 1
 for row in a:
     print(row)
+
+# Time Complexity: O(n * m)
+# Space Complexity: O(n + m)

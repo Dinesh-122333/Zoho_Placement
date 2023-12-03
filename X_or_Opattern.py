@@ -23,7 +23,9 @@ while top <= bottom and left <= right:
         for m in range(bottom, top-1, -1):
             arr[m][left]="X"
         left +=1
-        
+
+# Time Complexity: O(m * n)
+# Space Complexity: O(m * n)    
     else:
         for i in range(left, right+1):
             arr[top][i] = "0"  

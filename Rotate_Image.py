@@ -9,5 +9,5 @@ class Solution:
             matrix[i]=matrix[i][::-1]
         return(matrix)
 
-Time complexity: O(n*n)
-Space complexity: O(1)
+# Time complexity: O(n*m)
+# Space complexity: O(1)
