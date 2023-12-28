@@ -24,8 +24,8 @@ class Solution:
         else:
             return 0   
             
-        Time Complexity: O(n^2)
-        Space Complexity: O(n)
+        # Time Complexity: O(n^2)
+        # Space Complexity: O(n)
         
         #optimal solution
         if len(s)>0 :
@@ -46,3 +46,19 @@ class Solution:
 
         # Time complexity: O(n)
         # Space complexity: O(1)
+
+        #Optimal solution2 using Pointers
+        alpha = []
+        left, right, lenght = 0, 0, 0
+        while right < len(s):
+            if s[right] not in alpha:
+                alpha.append(s[right])
+                if lenght < right - left + 1: 
+                    lenght = right - left + 1
+                right += 1
+            elif s[right] in alpha:
+                alpha.remove(s[left])
+                left += 1  
+        return lenght
+    # Time Complexity : O(n)
+    # Space Complexity : O(min(n,m))

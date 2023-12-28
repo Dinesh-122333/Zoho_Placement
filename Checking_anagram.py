@@ -1,21 +1,15 @@
-str1 = "xyz"
-str2 = "afdgzyxksldfm"
-count = 0
-str1_dic = {}
 
-for char in str1:
-    if char in str1_dic:
-        str1_dic[char] += 1
-    else:
-        str1_dic[char] = 1
+def are_permutations(s1, s2):
+    return sorted(s1) == sorted(s2)
+s1 = "xyz"
+s2 = "afdgzyxksldfm"
 
-for i in range(len(str2)):
-    if str2[i] in str1_dic:
-        str1_dic[str2[i]] -= 1
-        if str1_dic[str2[i]] == 0:
-            count += 1
+if len(s1) > len(s2):
+    print(False)
 
-    if count == len(str1):
+for i in range(len(s2) - len(s1) + 1):
+    sub = s2[i : i + len(s1)]
+    if are_permutations(s1, sub):
         print(True)
         break
 #Time Complexity:O(N)
